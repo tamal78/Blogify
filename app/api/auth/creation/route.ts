@@ -31,7 +31,7 @@ export async function GET() {
 
   return NextResponse.redirect(
     process.env.NODE_ENV === "production"
-      ? `${process.env.APP_URL}/dasboard`
-      : "http://localhost:3000/dashboard"
+      ? `${process.env.APP_URL}`
+      : "http://localhost:3000"
   );
 }
